@@ -175,11 +175,10 @@ export default function App() {
           </div>
           <div className="relative">
             <img 
-              src={provasocial} alt="Prova Social" />
-              alt="Sucesso Digital" 
-              className="rounded-3xl shadow-2xl border border-zinc-800"
-              referrerPolicy="no-referrer"
-            /
+              src={provasocial}
+              alt="Prova Social" 
+              className="w-64 mx-auto rounded-2xl shadow-2xl"
+              />
             <div className="absolute -bottom-6 -left-6 bg-zinc-900 p-6 rounded-2xl border border-zinc-800 shadow-2xl max-w-[240px]">
               <div className="flex items-center gap-2 mb-2">
                 <TrendingUp className="w-5 h-5 text-green-500" />
