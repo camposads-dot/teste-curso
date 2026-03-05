@@ -6,6 +6,8 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import provasocial from './assets/provasocial.jpg'
+import provaviva from './assets/provaviva.jpg'
+import fotopagina from './assets/fotopagina.jpg'
 
 import {
   CheckCircle2,
@@ -191,50 +193,34 @@ export default function App() {
       </section>
 
       {/* Prova Social */}
-      <section className="bg-zinc-900/30">
-        <div className="section-padding">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">QUEM APLICOU, <span className="text-red-600">MUDOU DE VIDA</span></h2>
-            <p className="text-zinc-400">Veja o que nossos alunos estão falando sobre o método.</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Ricardo Santos",
-                role: "Ex-Vendedor",
-                text: "Eu estava desesperado com as contas. Em 15 dias após lançar meu primeiro e-book seguindo o método, bati meu primeiro salário mínimo online.",
-                img: "https://i.pravatar.cc/150?u=ricardo"
-              },
-              {
-                name: "Ana Oliveira",
-                role: "Mãe e Empreendedora",
-                text: "Consegui criar meu produto do zero enquanto cuidava dos meus filhos. Hoje o digital é minha principal fonte de renda.",
-                img: "https://i.pravatar.cc/150?u=ana"
-              },
-              {
-                name: "Marcos Lima",
-                role: "Estudante",
-                text: "O suporte é incrível e o conteúdo é direto ao ponto. Sem enrolação, só o que funciona para vender de verdade.",
-                img: "https://i.pravatar.cc/150?u=marcos"
-              }
-            ].map((testimonial, i) => (
-              <div key={i} className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 relative">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-yellow-500 fill-current" />)}
-                </div>
-                <p className="text-zinc-300 italic mb-6">"{testimonial.text}"</p>
-                <div className="flex items-center gap-4">
-                  <img src={testimonial.img} alt={testimonial.name} className="w-12 h-12 rounded-full border border-zinc-700" referrerPolicy="no-referrer" />
-                  <div>
-                    <p className="font-bold text-white">{testimonial.name}</p>
-                    <p className="text-xs text-zinc-500">{testimonial.role}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <div className="flex flex-col items-center gap-10 mt-12">
+
+  <h2 className="text-3xl md:text-4xl font-bold text-center">
+    EU SOU A <span className="text-red-500">PROVA VIVA</span>
+  </h2>
+
+  <p className="text-zinc-400 text-center max-w-2xl">
+    Eu sou a prova viva de como é possível criar uma renda no digital 
+    mesmo começando com pouco.
+  </p>
+
+  <div className="flex justify-center gap-8 mt-10">
+
+  <img
+    src={provaviva}
+    alt="Prova Viva"
+    className="w-64 rounded-2xl shadow-2xl"
+  />
+
+  <img
+    src={fotopagina}
+    alt="Resultado"
+    className="w-64 rounded-2xl shadow-2xl"
+  />
+
+</div>
+
+</div>
 
       {/* Bônus */}
       <section className="section-padding">
