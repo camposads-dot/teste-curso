@@ -62,7 +62,7 @@ export default function App() {
             className="text-center lg:text-left"
           >
             <span className="inline-block py-1 px-3 rounded-full bg-red-500/10 text-red-500 text-xs font-bold uppercase tracking-widest mb-6 border border-red-500/20">
-              Método Validado 2024
+              Método Validado 2026
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-extrabold leading-[1.1] mb-6">
               PARE DE SER <span className="text-red-600">ESCRAVO</span> DO SEU CHEFE E CRIE SEU PRÓPRIO IMPÉRIO.
@@ -127,7 +127,7 @@ export default function App() {
               },
               {
                 icon: <XCircle className="w-10 h-10 text-red-500" />,
-                title: "Falta de Liberdade",
+                title: "Falta de Liberdade/tempo",
                 desc: "Você não tem tempo para sua família, para seus hobbies ou para simplesmente descansar."
               },
               {
