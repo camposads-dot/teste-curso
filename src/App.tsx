@@ -9,6 +9,7 @@ import provasocial from './assets/provasocial.jpg'
 import provaviva from './assets/provaviva.jpg'
 import fotopagina from './assets/fotopagina.jpg'
 import resultado from './assets/resultado.jpg'
+import apresentação from './assets/apresentação.jpg'
 
 import {
   CheckCircle2,
@@ -239,26 +240,26 @@ export default function App() {
           {[
             {
               title: "Templates de Copy",
-              desc: "Modelos prontos para você apenas copiar e colar nos seus anúncios e páginas.",
-              value: "R$ 197,00",
+              desc: "Modelos prontos para você apenas copiar e colar nos seus anúncios.",
+              value: "R$ 37,90",
               icon: <Target className="w-8 h-8 text-red-500" />
             },
             {
-              title: "Grupo VIP",
-              desc: "Acesso à nossa comunidade exclusiva para networking e dúvidas.",
-              value: "R$ 497,00",
+              title: "Suporte Personalizado",
+              desc: "Acesso ao meu suporte exclusivo para networking e dúvidas.",
+              value: "R$ 150,00",
               icon: <Users className="w-8 h-8 text-red-500" />
             },
             {
-              title: "Checklist do Lançamento",
-              desc: "O passo a passo exato para não esquecer nada no dia do seu lançamento.",
-              value: "R$ 97,00",
+              title: "Checklist da Oferta",
+              desc: "O passo a passo exato para não esquecer nada para a criação da sua oferta.",
+              value: "R$ 57,90",
               icon: <CheckCircle2 className="w-8 h-8 text-red-500" />
             },
             {
-              title: "Mentoria Gravada",
-              desc: "Uma aula completa onde analiso produtos reais que faturam alto.",
-              value: "R$ 297,00",
+              title: "Mentoria com Desconto",
+              desc: "Agindo agora, além de aproveitar os bônus você pode solicitar uma mentoria com 50% off com 2 especialistas no assunto.",
+              value: "R$ 4.000,00",
               icon: <Play className="w-8 h-8 text-red-500" />
             }
           ].map((bonus, i) => (
@@ -332,11 +333,11 @@ export default function App() {
           <div className="space-y-2">
             <FAQItem 
               question="Preciso ter um computador?" 
-              answer="Não! O método foi desenvolvido para que você consiga fazer tudo apenas pelo seu celular, desde a criação até as vendas." 
+              answer="Não! O método foi desenvolvido para que você consiga fazer tudo apenas pelo seu celular, desde a criação até as vendas, mas ter um computador vai facilitar na hora de criar as ofertas." 
             />
             <FAQItem 
               question="Quanto tempo demora para ter resultados?" 
-              answer="Isso depende da sua dedicação. Temos alunos que fizeram a primeira venda em menos de 48 horas, enquanto outros levam uma semana. O importante é aplicar o método." 
+              answer="Isso depende da sua dedicação. Eu já fiz venda em menos de 48 horas, mas também levei 30 dias para estruturar a primeira oferta. O importante é aplicar o método." 
             />
             <FAQItem 
               question="Eu não tenho nenhum conhecimento, serve para mim?" 
@@ -360,23 +361,23 @@ export default function App() {
               Depois de anos quebrando a cabeça no mercado digital e falhando miseravelmente, eu finalmente descobri o código para criar produtos que vendem todos os dias.
             </p>
             <p className="text-zinc-400 mb-8 leading-relaxed text-sm sm:text-base">
-              Hoje, minha missão é ajudar pessoas comuns a saírem da corrida dos ratos e conquistarem a liberdade financeira que o digital proporciona. Já ajudei mais de 5.000 alunos a iniciarem seus próprios negócios online.
+              Hoje, minha missão é ajudar pessoas comuns, principalmente estudantes que precisam de tempo para estudar a saírem da corrida dos ratos e conquistarem a liberdade financeira que o digital proporciona. Já fiz +100 alunos com a venda de material para estudante.
             </p>
             <div className="flex items-center justify-center md:justify-start gap-6">
               <div>
-                <p className="text-3xl font-black text-white">5k+</p>
+                <p className="text-3xl font-black text-white">100+</p>
                 <p className="text-xs text-zinc-500 uppercase">Alunos</p>
               </div>
               <div className="w-px h-10 bg-zinc-800" />
               <div>
-                <p className="text-3xl font-black text-white">R$ 1M+</p>
+                <p className="text-3xl font-black text-white">R$ 10K+</p>
                 <p className="text-xs text-zinc-500 uppercase">Faturados</p>
               </div>
             </div>
           </div>
           <div className="order-1 md:order-2">
             <img 
-              src="https://picsum.photos/seed/mentor/600/600" 
+              src={apresentação}
               alt="Mentor" 
               className="rounded-3xl border border-zinc-800 shadow-2xl grayscale hover:grayscale-0 transition-all duration-500"
               referrerPolicy="no-referrer"
