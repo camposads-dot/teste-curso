@@ -56,6 +56,7 @@ const FAQItem = ({ question, answer }: { question: string, answer: string }) => 
 export default function App() {
   return (
     <div className="min-h-screen bg-zinc-950">
+      <div className="max-w-7xl mx-auto px-4"></div>
   
       {/* 1ª Dobra - Hero */}
       <section className="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
@@ -135,7 +136,7 @@ export default function App() {
               {
                 icon: <XCircle className="w-10 h-10 text-red-500" />,
                 title: "Falta de Liberdade/tempo",
-                desc: "Você não tem tempo para sua família, para seus hobbies ou para simplesmente descansar."
+                desc: "Você não tem tempo para sua família, para seus estudos, paraseus hobbies ou para simplesmente descansar."
               },
               {
                 icon: <XCircle className="w-10 h-10 text-red-500" />,
