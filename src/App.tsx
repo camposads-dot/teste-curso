@@ -209,24 +209,24 @@ export default function App() {
   mesmo começando com pouco.
 </p>
 
-<div className="flex gap-6 overflow-x-auto mt-10 px-4">
+<div className="flex gap-6 justify-start md:justify-center mt-10 overflow-x-auto px-4">
 
   <img
     src={provaviva}
     alt="Prova Viva"
-    className="w-72 rounded-xl shadow-xl flex-shrink-0"
+    className="w-60 h-72 md:w-72 md:h-72 object-cover rounded-xl shadow-xl"
   />
 
   <img
     src={fotopagina}
     alt="Resultado"
-    className="w-72 rounded-xl shadow-xl flex-shrink-0"
+    className="w-60 h-72 md:w-72 md:h-72 object-cover rounded-xl shadow-xl"
   />
 
   <img
     src={resultado}
     alt="Resultado"
-    className="w-72 rounded-xl shadow-xl flex-shrink-0"
+    className="w-60 h-72 md:w-72 md:h-72 object-cover rounded-xl shadow-xl"
   />
 
 </div>
