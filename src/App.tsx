@@ -5,14 +5,16 @@
 
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { 
-  CheckCircle2, 
-  XCircle, 
-  ArrowRight, 
-  Star, 
-  ShieldCheck, 
-  HelpCircle, 
-  Play, 
+import provasocial from './assets/provasocial.jpg';
+
+import {
+  CheckCircle2,
+  XCircle,
+  ArrowRight,
+  Star,
+  ShieldCheck,
+  HelpCircle,
+  Play,
   ChevronDown,
   ChevronUp,
   Zap,
@@ -21,7 +23,7 @@ import {
   Users,
   Gift,
   Clock
-} from 'lucide-react';
+} from "lucide-react";
 
 const FAQItem = ({ question, answer }: { question: string, answer: string }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -172,7 +174,7 @@ export default function App() {
           </div>
           <div className="relative">
             <img 
-              src="https://picsum.photos/seed/success/600/800" 
+              src="/src/assets/provasocial.jpg"
               alt="Sucesso Digital" 
               className="rounded-3xl shadow-2xl border border-zinc-800"
               referrerPolicy="no-referrer"
@@ -180,9 +182,9 @@ export default function App() {
             <div className="absolute -bottom-6 -left-6 bg-zinc-900 p-6 rounded-2xl border border-zinc-800 shadow-2xl max-w-[240px]">
               <div className="flex items-center gap-2 mb-2">
                 <TrendingUp className="w-5 h-5 text-green-500" />
-                <span className="font-bold text-green-500">+R$ 1.412,00</span>
+                <span className="font-bold text-green-500">+R$ 6.000,00</span>
               </div>
-              <p className="text-xs text-zinc-500">Notificação de venda realizada com sucesso!</p>
+              <p className="text-xs text-zinc-500">Faturamento gerado em 30 dias!</p>
             </div>
           </div>
         </div>
