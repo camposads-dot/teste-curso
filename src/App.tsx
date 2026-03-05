@@ -5,7 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import provasocial from './assets/provasocial.jpg';
+import provasocial from './assets/provasocial.jpg'
 
 import {
   CheckCircle2,
@@ -52,6 +52,7 @@ const FAQItem = ({ question, answer }: { question: string, answer: string }) => 
 export default function App() {
   return (
     <div className="min-h-screen bg-zinc-950">
+      <img src={provasocial} alt="Prova Social" />
       {/* 1ª Dobra - Hero */}
       <section className="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(239,68,68,0.08)_0%,transparent_70%)] pointer-events-none" />
