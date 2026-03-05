@@ -200,36 +200,33 @@ export default function App() {
       {/* Prova Social */}
  <section className="section-padding text-center">
 
-<h2 className="text-3xl md:text-4xl font-bold">
+<h2 className="text-3xl md:text-4xl font-bold text-center">
   EU SOU A <span className="text-red-500">PROVA VIVA</span>
 </h2>
 
-<p className="text-zinc-400 max-w-2xl mx-auto mt-4">
-  Eu sou a prova viva de como é possível criar uma renda no digital
+<p className="text-zinc-400 text-center max-w-2xl mx-auto">
+  Eu sou a prova viva de como é possível criar uma renda no digital 
   mesmo começando com pouco.
 </p>
 
-<div className="cards flex gap-6 mt-10 overflow-x-auto scroll-smooth pb-4">
+<div className="flex gap-6 overflow-x-auto mt-10 px-4">
 
   <img
     src={provaviva}
     alt="Prova Viva"
-    className="w-72 h-auto rounded-xl shadow-xl flex-shrink-0"
-
+    className="w-72 rounded-xl shadow-xl flex-shrink-0"
   />
 
   <img
     src={fotopagina}
     alt="Resultado"
-    className="w-72 h-auto rounded-xl shadow-xl flex-shrink-0"
-
+    className="w-72 rounded-xl shadow-xl flex-shrink-0"
   />
 
   <img
     src={resultado}
     alt="Resultado"
-    className="w-72 h-auto rounded-xl shadow-xl flex-shrink-0"
-
+    className="w-72 rounded-xl shadow-xl flex-shrink-0"
   />
 
 </div>
@@ -304,7 +301,7 @@ export default function App() {
               <p className="text-zinc-500 mt-2 text-sm sm:text-base">ou 12x de R$ 9,74 no cartão</p>
             </div>
 
-            <a href="#" className="btn-primary w-full max-w-md block mx-auto text-lg sm:text-xl py-5 sm:py-6 mb-6">
+            <a href="https://pay.kiwify.com.br/V2KfLy0" className="btn-primary w-full max-w-md block mx-auto text-lg sm:text-xl py-5 sm:py-6 mb-6">
               QUERO MINHA LIBERDADE AGORA
             </a>
 
