@@ -56,13 +56,8 @@ const FAQItem = ({ question, answer }: { question: string, answer: string }) => 
 export default function App() {
   return (
     <div className="min-h-screen bg-zinc-950">
-      <div className="max-w-7xl mx-auto px-4"></div>
-      <div className="cards">
-      <img src={provasocial} alt="prova social" />
-      <img src={provaviva} alt="prova" />
-      <img src={resultado} alt="resultado" />
-    </div>
-  
+     <div className="max-w-7xl mx-auto px-4">
+
       {/* 1ª Dobra - Hero */}
       <section className="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(239,68,68,0.08)_0%,transparent_70%)] pointer-events-none" />
@@ -201,8 +196,7 @@ export default function App() {
       </section>
 
       {/* Prova Social */}
-      <div className="flex flex-col items-center gap-10 mt-12">
-      
+  <div className="cards flex gap-6 overflow-x-auto">
 
   <h2 className="text-3xl md:text-4xl font-bold text-center">
     EU SOU A <span className="text-red-500">PROVA VIVA</span>
@@ -214,6 +208,8 @@ export default function App() {
   </p>
 
   <div className="flex justify-center gap-8 mt-10">
+
+  <div className="cards">
 
   <img
     src={provaviva}
@@ -411,5 +407,7 @@ export default function App() {
         </div>
       </footer>
     </div>
+    </div>
+</div>
   );
 }
