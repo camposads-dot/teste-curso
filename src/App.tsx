@@ -31,6 +31,7 @@ import {
 
 const FAQItem = ({ question, answer }: { question: string, answer: string }) => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="border-b border-zinc-800 py-4">
       <button 
@@ -40,6 +41,7 @@ const FAQItem = ({ question, answer }: { question: string, answer: string }) => 
         <span>{question}</span>
         {isOpen ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
       </button>
+
       {isOpen && (
         <motion.div 
           initial={{ height: 0, opacity: 0 }}
@@ -56,7 +58,7 @@ const FAQItem = ({ question, answer }: { question: string, answer: string }) => 
 export default function App() {
   return (
     <div className="min-h-screen bg-zinc-950">
-     <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
 
       {/* 1ª Dobra - Hero */}
       <section className="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
@@ -196,20 +198,18 @@ export default function App() {
       </section>
 
       {/* Prova Social */}
-  <div className="cards flex gap-6 overflow-x-auto">
+ <section className="section-padding text-center">
 
-  <h2 className="text-3xl md:text-4xl font-bold text-center">
-    EU SOU A <span className="text-red-500">PROVA VIVA</span>
-  </h2>
+<h2 className="text-3xl md:text-4xl font-bold">
+  EU SOU A <span className="text-red-500">PROVA VIVA</span>
+</h2>
 
-  <p className="text-zinc-400 text-center max-w-2xl">
-    Eu sou a prova viva de como é possível criar uma renda no digital 
-    mesmo começando com pouco.
-  </p>
+<p className="text-zinc-400 max-w-2xl mx-auto mt-4">
+  Eu sou a prova viva de como é possível criar uma renda no digital
+  mesmo começando com pouco.
+</p>
 
-  <div className="flex justify-center gap-8 mt-10">
-
-  <div className="cards">
+<div className="cards flex gap-6 justify-center mt-10 overflow-x-auto">
 
   <img
     src={provaviva}
@@ -231,7 +231,7 @@ export default function App() {
 
 </div>
 
-</div>
+</section>
 
       {/* Bônus */}
       <section className="section-padding">
@@ -406,8 +406,7 @@ export default function App() {
           </p>
         </div>
       </footer>
+       </div>
     </div>
-    </div>
-</div>
   );
 }
