@@ -138,7 +138,7 @@ export default function App() {
               {
                 icon: <XCircle className="w-10 h-10 text-red-500" />,
                 title: "Falta de Liberdade/tempo",
-                desc: "Você não tem tempo para sua família, para seus estudos, paraseus hobbies ou para simplesmente descansar."
+                desc: "Você não tem tempo para sua família, para seus estudos, para seus hobbies ou para simplesmente descansar."
               },
               {
                 icon: <XCircle className="w-10 h-10 text-red-500" />,
@@ -209,24 +209,27 @@ export default function App() {
   mesmo começando com pouco.
 </p>
 
-<div className="cards flex gap-6 justify-center mt-10 overflow-x-auto">
+<div className="cards flex gap-6 mt-10 overflow-x-auto scroll-smooth pb-4">
 
   <img
     src={provaviva}
     alt="Prova Viva"
-    className="w-72 h-72 object-cover rounded-xl shadow-xl"
+    className="w-72 h-auto rounded-xl shadow-xl flex-shrink-0"
+
   />
 
   <img
     src={fotopagina}
     alt="Resultado"
-    className="w-72 h-72 object-cover rounded-xl shadow-xl"
+    className="w-72 h-auto rounded-xl shadow-xl flex-shrink-0"
+
   />
 
   <img
     src={resultado}
     alt="Resultado"
-    className="w-72 h-72 object-cover rounded-xl shadow-xl"
+    className="w-72 h-auto rounded-xl shadow-xl flex-shrink-0"
+
   />
 
 </div>
