@@ -52,7 +52,7 @@ const FAQItem = ({ question, answer }: { question: string, answer: string }) => 
 export default function App() {
   return (
     <div className="min-h-screen bg-zinc-950">
-      <img src={provasocial} alt="Prova Social" />
+  
       {/* 1ª Dobra - Hero */}
       <section className="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(239,68,68,0.08)_0%,transparent_70%)] pointer-events-none" />
@@ -175,11 +175,11 @@ export default function App() {
           </div>
           <div className="relative">
             <img 
-              src="/src/assets/provasocial.jpg"
+              src={provasocial} alt="Prova Social" />
               alt="Sucesso Digital" 
               className="rounded-3xl shadow-2xl border border-zinc-800"
               referrerPolicy="no-referrer"
-            />
+            /
             <div className="absolute -bottom-6 -left-6 bg-zinc-900 p-6 rounded-2xl border border-zinc-800 shadow-2xl max-w-[240px]">
               <div className="flex items-center gap-2 mb-2">
                 <TrendingUp className="w-5 h-5 text-green-500" />
