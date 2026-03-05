@@ -57,6 +57,11 @@ export default function App() {
   return (
     <div className="min-h-screen bg-zinc-950">
       <div className="max-w-7xl mx-auto px-4"></div>
+      <div className="cards">
+      <img src={provasocial} alt="prova social" />
+      <img src={provaviva} alt="prova" />
+      <img src={resultado} alt="resultado" />
+    </div>
   
       {/* 1ª Dobra - Hero */}
       <section className="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
@@ -197,6 +202,7 @@ export default function App() {
 
       {/* Prova Social */}
       <div className="flex flex-col items-center gap-10 mt-12">
+      
 
   <h2 className="text-3xl md:text-4xl font-bold text-center">
     EU SOU A <span className="text-red-500">PROVA VIVA</span>
