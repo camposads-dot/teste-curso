@@ -8,6 +8,7 @@ import { motion } from 'motion/react';
 import provasocial from './assets/provasocial.jpg'
 import provaviva from './assets/provaviva.jpg'
 import fotopagina from './assets/fotopagina.jpg'
+import resultado from './assets/resultado.jpg'
 
 import {
   CheckCircle2,
@@ -209,13 +210,19 @@ export default function App() {
   <img
     src={provaviva}
     alt="Prova Viva"
-    className="w-64 rounded-2xl shadow-2xl"
+    className="w-72 h-72 object-cover rounded-xl shadow-xl"
   />
 
   <img
     src={fotopagina}
     alt="Resultado"
-    className="w-64 rounded-2xl shadow-2xl"
+    className="w-72 h-72 object-cover rounded-xl shadow-xl"
+  />
+
+  <img
+    src={resultado}
+    alt="Resultado"
+    className="w-72 h-72 object-cover rounded-xl shadow-xl"
   />
 
 </div>
